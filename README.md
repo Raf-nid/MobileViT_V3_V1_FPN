@@ -35,9 +35,9 @@ Format: Each .mat file must contain:
   
   └── valid/ 
   
-      ├── sample_100.mat 
-      
-      └── ...
+  │    ├── sample_100.mat 
+  
+  │    └── ...
 
 ##Training
 To start the training process, run the main script. Ensure you have updated the DATA_DIR paths in the configuration section of training_MobileUnet_V5.py.

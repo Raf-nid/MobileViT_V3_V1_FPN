@@ -6,7 +6,7 @@ This repository contains a PyTorch implementation of a deep learning model desig
 The project is optimized for scientific data (e.g., ultrasound, NDT, or seismic data) stored in MATLAB formats, featuring custom loss functions like Normalized Cross-Correlation (NCC).
 ## Project structure
 .
-├── training_MobileUnet_V5.py # Main training script //
+├── training_MobileUnet_V5.py # Main training script <br>
 ├── mobilevit_v3_v1_Pixel2.py # Model architecture
 ├── utils.py                  # Custom loss functions, metrics, and helper classes
 ├── config_MobileUNET.py      # Configuration parameters

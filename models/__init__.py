@@ -9,7 +9,6 @@ MODEL_REGISTRY = {
     'MobileViTv3_v1_dynamicFPN_DANN': ('.segmentation.mobilevit_v3_dann', 'MobileViTv3_v1_dynamicFPN_DANN'),
     'MobileViTv3_v1_dynamicFPN2': ('.segmentation.mobilevit_v3_fpn_plus', 'MobileViTv3_v1_dynamicFPN2'),
     'MobileViTv3_v1_dynamicFPN_LSA': ('.segmentation.mobilevit_v3_lsa', 'MobileViTv3_v1_dynamicFPN_LSA'),
-    'MobileViTv3_v1_dynamicFPNpixel2_V2': ('.segmentation.mobilevit_v3_pixel2_true', 'MobileViTv3_v1_dynamicFPNpixel2_V2'),
     'MobileViTv3_v1_dynamicFPNpixel2': ('.segmentation.mobilevit_v3_pixel2', 'MobileViTv3_v1_dynamicFPNpixel2'),
     'MobileViTv3_v1_dynamicFPNpixel': ('.segmentation.mobilevit_v3_pixelv1', 'MobileViTv3_v1_dynamicFPNpixel'),
     'MobileViTv3_v1_dynamicFPN_plus': ('.segmentation.mobilevit_v3_plus', 'MobileViTv3_v1_dynamicFPN_plus'),

@@ -17,6 +17,12 @@ from tqdm import tqdm
 import glob
 from torch.utils.data import Dataset, DataLoader
 import h5py
+import sys
+from pathlib import Path
+
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
 
 # Importation des modules specifiques a votre projet
 import config_MobileUNET as config
@@ -24,8 +30,7 @@ from MobileUnet_V2_CRM import MobileNetV2_dynamicFPN
 from utils import EarlyStopping, ncc, NCC_MSE_Loss  # si vous en avez besoin
 from mobilevit_v3_v1 import MobileViTv3_v1_dynamicFPN
 from Model import UNETred, UNET # legacy: cuda device note
-from mobilevit_v3_v1_Pixel2 import MobileViTv3_v1_dynamicFPNpixel2
-from mobilevit_v3_v1_Pixel2_True import MobileViTv3_v1_dynamicFPNpixel2_V2
+from models.segmentation.mobilevit_v3_pixel2 import MobileViTv3_v1_dynamicFPNpixel2
 from mobilevit_v3_v1Pixel import MobileViTv3_v1_dynamicFPNpixel
 
 def set_seed(seed):

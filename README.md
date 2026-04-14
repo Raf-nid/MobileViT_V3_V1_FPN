@@ -2,9 +2,19 @@
 
 Research codebase for **ultrasound FMC-style** reconstruction experiments: MobileViT-style backbones, FPN / UNet-style decoders, **pixel shuffle** heads, optional **Mixture-of-Experts (MoE)** and **DANN** variants. Documentation and primary code comments are in **English**.
 
+## Related conference paper
+
+This repository supports work presented in connection with the [**Acoustical Society of America — Honolulu 2025**](https://acousticalsociety.org/honolulu-2025/):
+
+**Enabling low-cost full matrix capture acquisition using MobileViT with binary ultrasonic data.**
+
+**Authors:** Rafael Niddam (École de technologie supérieure, 1100 Notre-Dame St. W., A-1340, Montréal, QC H3C 1K3, Canada, Guillaume Painchaud-April (Evident Sci., QC, Canada), Alain Le Duff (Evident Sci., QC, Canada), and Pierre Belanger (École de technologie supérieure, Montréal, QC, Canada).
+
+**Contact:** [Rafael Niddam on LinkedIn](https://www.linkedin.com/in/rafael-niddam/)
+
 ## Features
 
-- **Models**: MobileViT v3 family (FPN, UNet, SegFormer, SPT, LSA, pixel variants), Lite MobileViT blocks, MobileNet v2 FPN/UNet, MoE and DANN wrappers (see `models/__init__.py` registry).
+- **Models**: MobileViT v3 family (FPN, UNet, SegFormer, SPT, LSA, pixel variants), Lite MobileViT blocks, MobileNet v2 FPN/UNet, MoE and DANN wrappers (see `models/__init__.py` registry). The **reference FMC pixel-shuffle segmentation model** is `MobileViTv3_v1_dynamicFPNpixel2` implemented in `models/segmentation/mobilevit_v3_pixel2.py`.
 - **Training**: `training/train.py` (argparse, `--list-models`), plus `training/train_moe.py` and `training/train_dann.py` for specialized setups.
 - **Evaluation & analysis**: use **`evaluation/evaluate_loop2.py`** as the main FMC validation script; **`evaluation/evaluate_moe2.py`** for MoE. A trailing `2` in a script name marks the preferred successor (see `evaluation/__init__.py`).
 - **Utilities**: losses, NCC, plotting helpers in `utils/`.

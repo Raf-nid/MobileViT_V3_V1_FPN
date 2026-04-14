@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-MoE evaluation (baseline). Prefer ``evaluate_moe2.py`` for the extended / updated pipeline.
+MoE evaluation (baseline). The final pipeline is ``evaluate_moe2.py`` (extended / updated).
 """
 import torch
 import torch.nn as nn

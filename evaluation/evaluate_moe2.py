@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Primary MoE evaluation script (successor to ``evaluate_moe.py``). Trailing ``2`` denotes the
-recommended version in this repository.
+final version in this repository.
 """
 import torch
 import torch.nn as nn

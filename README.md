@@ -14,9 +14,9 @@ This repository supports work presented in connection with the [**Acoustical Soc
 
 ## Features
 
-- **Models**: MobileViT v3 family (FPN, UNet, SegFormer, SPT, LSA, pixel variants), Lite MobileViT blocks, MobileNet v2 FPN/UNet, MoE and DANN wrappers (see `models/__init__.py` registry). The **reference FMC pixel-shuffle segmentation model** is `MobileViTv3_v1_dynamicFPNpixel2` implemented in `models/segmentation/mobilevit_v3_pixel2.py`.
+- **Models**: MobileViT v3 family (FPN, UNet, SegFormer, SPT, LSA, pixel variants), Lite MobileViT blocks, MobileNet v2 FPN/UNet, MoE and DANN wrappers (see `models/__init__.py` registry). The **final FMC pixel-shuffle segmentation model** is `MobileViTv3_v1_dynamicFPNpixel2` implemented in `models/segmentation/mobilevit_v3_pixel2.py`.
 - **Training**: `training/train.py` (argparse, `--list-models`), plus `training/train_moe.py` and `training/train_dann.py` for specialized setups.
-- **Evaluation & analysis**: use **`evaluation/evaluate_loop2.py`** as the main FMC validation script; **`evaluation/evaluate_moe2.py`** for MoE. A trailing `2` in a script name marks the preferred successor (see `evaluation/__init__.py`).
+- **Evaluation & analysis**: use **`evaluation/evaluate_loop2.py`** as the main FMC validation script; **`evaluation/evaluate_moe2.py`** for MoE. A trailing `2` in a script name marks the final version in that line (see `evaluation/__init__.py`).
 - **Utilities**: losses, NCC, plotting helpers in `utils/`.
 
 ## Repository layout
@@ -69,7 +69,7 @@ python training/train.py --list-models
 python training/train.py --model MobileViTv3_v1_dynamicFPNpixel2 --batch_size 16
 ```
 
-**Evaluate** (recommended: loop presets + project paths)
+**Evaluate** (final workflow: loop presets + project paths)
 
 ```bash
 python evaluation/evaluate_loop2.py --preset 0

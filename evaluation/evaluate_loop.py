@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Legacy multi-preset validation loop. Prefer ``evaluate_loop2.py`` (cleaner layout, argparse,
+Legacy multi-preset validation loop. The final script is ``evaluate_loop2.py`` (cleaner layout, argparse,
 project-relative paths, model registry).
 """
 import torch

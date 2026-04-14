@@ -1,4 +1,4 @@
-"""MobileViT v3 + dynamic FPN + pixel-shuffle head — reference segmentation model for FMC-style experiments in this repository.
+"""MobileViT v3 + dynamic FPN + pixel-shuffle head — final segmentation model for FMC-style experiments in this repository.
 
 Use registry name ``MobileViTv3_v1_dynamicFPNpixel2`` with ``models.get_model`` (see ``models/__init__.py``).
 """

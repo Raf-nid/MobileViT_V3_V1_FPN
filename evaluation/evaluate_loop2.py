@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Primary FMC validation script (recommended).
+Primary FMC validation script (final entry point).
 
 **Use this file** for batched inference, NCC/MSE metrics, and MATLAB exports.
 
 Naming in this repo: a trailing ``2`` in a script name (e.g. ``evaluate_loop2`` vs
-``evaluate_loop``, ``evaluate_moe2`` vs ``evaluate_moe``) usually marks an **improved**
-successor—prefer the ``*2`` entry point unless you need the older script for comparison.
+``evaluate_loop``, ``evaluate_moe2`` vs ``evaluate_moe``) usually marks the **final**
+version—use the ``*2`` entry point unless you need the older script for comparison.
 
 **Setup**
     - Test ``.mat`` files (HDF5 with ``FMC`` / ``Bin``): under ``data/<subdir>`` (preset 0 uses ``data/Test_dataset``). Override with ``--test-dir`` (absolute or relative to ``data/``).
@@ -340,7 +340,7 @@ def run_preset(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="FMC validation (recommended entry point).")
+    parser = argparse.ArgumentParser(description="FMC validation (final entry point).")
     parser.add_argument(
         "--preset",
         type=int,
